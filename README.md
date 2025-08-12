@@ -2,7 +2,9 @@
 
 A lightweight, responsive, customizable back-to-top button web component.
 
-![back-to-top button](/assets/back-to-top.png)
+
+
+![back-to-top gif](/assets/b2t.gif)
 
 ## Features
 
