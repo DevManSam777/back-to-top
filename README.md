@@ -20,8 +20,7 @@ A lightweight, responsive, customizable back-to-top button web component.
 ### 1. Include the Component
 
 ```html
-<script src="back-to-top.js"></script>
-```
+<script src="https://raw.githack.com/DevManSam777/back-to-top/main/back-to-top.js"></script>
 
 ### 2. Add to Your HTML
 
