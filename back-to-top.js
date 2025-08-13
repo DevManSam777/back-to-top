@@ -1,7 +1,7 @@
 class BackToTop extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'closed' });
+    this.shadow = this.attachShadow({ mode: 'closed' });
     this.isVisible = false;
     this.boundScrollHandler = this.handleScroll.bind(this);
     this.boundKeyHandler = this.handleKeyPress.bind(this);
@@ -50,7 +50,7 @@ class BackToTop extends HTMLElement {
     const ariaLabel = this.getAttribute('aria-label') || 'Back to top';
     const animationDuration = this.getAttribute('animation-duration') || '0.3s';
 
-    this.shadowRoot.innerHTML = `
+    this.shadow.innerHTML = `
       <style>
         :host {
           position: fixed;
@@ -107,7 +107,7 @@ class BackToTop extends HTMLElement {
       </button>
     `;
 
-    this.button = this.shadowRoot.querySelector('button');
+    this.button = this.shadow.querySelector('button');
     this.updateStyles();
   }
 
@@ -149,7 +149,7 @@ class BackToTop extends HTMLElement {
     const hoverBoxShadow = this.enhanceShadow(boxShadow);
 
     // Update hover styles
-    const existingStyle = this.shadowRoot.querySelector('#hover-styles');
+    const existingStyle = this.shadow.querySelector('#hover-styles');
     if (existingStyle) existingStyle.remove();
 
     const hoverStyle = document.createElement('style');
@@ -162,7 +162,7 @@ class BackToTop extends HTMLElement {
         transform: translateY(-${hoverLift}) !important;
       }
     `;
-    this.shadowRoot.appendChild(hoverStyle);
+    this.shadow.appendChild(hoverStyle);
   }
 
   lightenColor(color, amount) {
