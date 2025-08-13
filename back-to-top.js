@@ -1,7 +1,7 @@
 class BackToTop extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: 'closed' });
     this.isVisible = false;
     this.boundScrollHandler = this.handleScroll.bind(this);
     this.boundKeyHandler = this.handleKeyPress.bind(this);
@@ -95,32 +95,6 @@ class BackToTop extends HTMLElement {
         button:focus-visible {
           outline: 2px solid currentColor;
           outline-offset: 2px;
-        }
-
-        @media (max-width: 768px) {
-          :host {
-            bottom: ${this.calculateMobileOffset(bottomOffset)};
-            ${position}: ${this.calculateMobileOffset(sideOffset)};
-            width: ${this.calculateMobileSize(size)};
-            height: ${this.calculateMobileSize(size)};
-          }
-          
-          button {
-            font-size: 1.1rem;
-          }
-        }
-
-        @media (max-width: 480px) {
-          :host {
-            bottom: ${this.calculateSmallMobileOffset(bottomOffset)};
-            ${position}: ${this.calculateSmallMobileOffset(sideOffset)};
-            width: ${this.calculateSmallMobileSize(size)};
-            height: ${this.calculateSmallMobileSize(size)};
-          }
-          
-          button {
-            font-size: 1rem;
-          }
         }
       </style>
       
@@ -296,30 +270,6 @@ class BackToTop extends HTMLElement {
     }
     
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-
-  calculateMobileOffset(offset) {
-    const value = parseFloat(offset);
-    const unit = offset.replace(value.toString(), '');
-    return `${Math.max(value * 0.8, 1.5)}${unit}`;
-  }
-
-  calculateSmallMobileOffset(offset) {
-    const value = parseFloat(offset);
-    const unit = offset.replace(value.toString(), '');
-    return `${Math.max(value * 0.6, 1)}${unit}`;
-  }
-
-  calculateMobileSize(size) {
-    const value = parseFloat(size);
-    const unit = size.replace(value.toString(), '');
-    return `${Math.max(value * 0.85, 2.5)}${unit}`;
-  }
-
-  calculateSmallMobileSize(size) {
-    const value = parseFloat(size);
-    const unit = size.replace(value.toString(), '');
-    return `${Math.max(value * 0.75, 2.25)}${unit}`;
   }
 }
 

@@ -10,7 +10,7 @@ A lightweight, responsive, customizable back-to-top button web component.
 
 - **Fully Customizable** - Colors, position, size, and styling
 - **Dark/Light Theme Support** - Automatic or manual theme switching  
-- **Responsive Design** - Adapts to mobile and tablet screens
+- **Responsive Design** - Works seamlessly on mobile and tablet screens
 - **Accessible** - ARIA labels, keyboard support, focus management
 - **Glassmorphism Design** - Modern backdrop blur effects
 - **No Dependencies** - Uses Unicode arrow, no external fonts needed
@@ -163,16 +163,6 @@ When enabled (default):
 - Press `Ctrl/Cmd + Home` to scroll to top  
 - Use `Tab` to focus the button and `Enter/Space` to activate
 
-## Responsive Behavior
-
-**Tablet (≤768px):**
-- Size reduced to 85% of original
-- Offsets reduced to 80% of original
-
-**Mobile (≤480px):**  
-- Size reduced to 75% of original
-- Offsets reduced to 60% of original
-
 ## Theme Detection
 
 Automatically detects system theme:
@@ -212,13 +202,13 @@ Automatically detects system theme:
 
 ## Performance
 
-- **Size:** ~6KB minified
+- **Size:** ~5KB minified
 - **Dependencies:** None
 - **Memory:** Minimal with proper cleanup
 - **Scroll Performance:** Passive event listeners
 
-## License
-[license](license)
+
+[License](license)
 ---
 
 &copy; 2025 DevManSam
