@@ -17,15 +17,29 @@ A lightweight, responsive, customizable back-to-top button web component.
 - **Custom Events** - Listen to show/hide/click events
 - **Smart Hover Colors** - Automatically calculated from button colors
 
-## Quick Start
+## Installation
 
-### 1. Include the Component
+### Via npm
+
+```bash
+npm install @devmansam/back-to-top
+```
+
+Then import in your JavaScript:
+
+```javascript
+import '@devmansam/back-to-top';
+```
+
+### Via CDN
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/DevManSam777/back-to-top@main/back-to-top.js"></script>
 ```
 
-### 2. Add to Your HTML
+## Usage
+
+Add to your HTML
 
 ```html
 <!-- Basic usage -->
