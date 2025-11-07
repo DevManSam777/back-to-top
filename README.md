@@ -19,7 +19,18 @@ A lightweight, responsive, customizable back-to-top button web component.
 
 ## Installation
 
-### Via npm
+### Option 1: CDN (No build tools required)
+
+The simplest way. Just add this script tag to your HTML:
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/DevManSam777/back-to-top@main/back-to-top.js"></script>
+<back-to-top></back-to-top>
+```
+
+### Option 2: npm with a bundler (Vite, Webpack, Parcel, etc.)
+
+If you're using a build tool:
 
 ```bash
 npm install @devmansam/back-to-top
@@ -31,15 +42,30 @@ Then import in your JavaScript:
 import '@devmansam/back-to-top';
 ```
 
-### Via CDN
+Add to your HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/DevManSam777/back-to-top@main/back-to-top.js"></script>
+<back-to-top></back-to-top>
+```
+
+### Option 3: npm without a bundler
+
+If you installed via npm but aren't using a bundler, you need to use the full path:
+
+```html
+<script type="module" src="./main.js"></script>
+<back-to-top></back-to-top>
+```
+
+In main.js:
+
+```javascript
+import './node_modules/@devmansam/back-to-top/back-to-top.js';
 ```
 
 ## Usage
 
-Add to your HTML
+### Basic
 
 ```html
 <!-- Basic usage -->
