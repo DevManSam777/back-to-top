@@ -12,7 +12,6 @@ A lightweight, responsive, customizable back-to-top button web component.
 - **Dark/Light Theme Support** - Automatic or manual theme switching  
 - **Responsive Design** - Works seamlessly on mobile and tablet screens
 - **Accessible** - ARIA labels, keyboard support, focus management
-- **Glassmorphism Design** - Modern backdrop blur effects
 - **No Dependencies** - Uses Unicode arrow, no external fonts needed
 - **Custom Events** - Listen to show/hide/click events
 - **Smart Hover Colors** - Automatically calculated from button colors
