@@ -1,0 +1,36 @@
+{
+  "name": "@devmansam/back-to-top",
+  "version": "1.0.0",
+  "description": "A lightweight, responsive, customizable back-to-top button web component",
+  "main": "back-to-top.js",
+  "type": "module",
+  "files": [
+    "back-to-top.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"No tests specified yet\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevManSam777/back-to-top.git"
+  },
+  "keywords": [
+    "web-component",
+    "custom-element",
+    "back-to-top",
+    "scroll-to-top",
+    "button",
+    "ui-component",
+    "accessible",
+    "lightweight",
+    "responsive"
+  ],
+  "author": "DevManSam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevManSam777/back-to-top/issues"
+  },
+  "homepage": "https://github.com/DevManSam777/back-to-top#readme"
+}
